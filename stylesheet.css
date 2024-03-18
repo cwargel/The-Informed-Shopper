@@ -1,0 +1,40 @@
+header {  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    color: black; /* Changes text color */
+    display: flex; /* Creates a flexbox for header items */
+    justify-content: space-between; /* Sets space between items in the header */
+    background-color: white; /* Changes background color */
+}
+
+nav {
+    display: flex; /* Creates a flexbox for nav items */
+    justify-content: right; /* Sets the content to display at the right of the page */
+}
+
+nav ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    display: inline-block; /* Creates boxes for the nav items */
+    border-radius: 20px; /* Sets a curved border for the nav items */
+    padding: 10px; /* Creates enough space for the text in the boxes */
+    border: 10px solid #4472C4; /* Sets the properties for the borders of the boxes */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    background-color: #4472C4; /* Changes background color */
+    color: white; /* Changes text color */
+}
+
+div .homepageimages {
+    display: flex; /* Creates a flexbox for items */
+    width: 100%; /* Makes the images span the entire width of the page */
+    justify-content: space-between; /* Creates even spacing between images */
+    /* More images will be needed to make this look natural on desktop displays */
+}
+
+
+
+section {
+    color: black; /* Changes text color */
+    background-color: white; /* Changes background color */
+}
