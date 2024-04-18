@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="description" content="iphone 14 reviews">
+    <meta name="keywords" content="electronics, devices, phones, tablets, computers, consumers, reviews, ratings, iphone 14, apple, iphone">
+    <meta name="author" content="Christopher Wargel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 14</title>
+</head>
+
+<body>
+    <header>
+        <h1><a id="pagehome" href="index.html">The Informed Shopper</a></h1>
+        <nav>
+            <ul>
+                <li><a href="mobiledevices.html">Mobile Devices</a></li>
+                <li><a href="desktops.html">Desktops and Laptops</a></li>
+                <li><a href="appliances.html">Appliances</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="devimages">
+        <img class="productimage" src="Images/ip14-1.jpg" alt="picture of iPhone 14" width="300" height="200">
+        <img class="productimage" src="Images/ip14-2.jpg" alt="picture of iPhone 14" width="300" height="200">
+    </div>
+
+    <div id="devicename">
+        <h1>Apple iPhone 14</h1>
+    </div>
+
+    <div id="devsections">
+        <div class="productsection" id="section1">
+            <h2>Retail Price:</h2><p>$699</p>
+
+            <h2>Display:</h2><p>7.2 inches</p>
+
+            <h2>Storage:</h2><p>128-512 GB</p>
+
+            <h2>Battery Life:</h2><p>26 Hours</p>
+
+            <h2>Charging:</h2><p>Wireless, Lightning Cable</p>
+
+            <h2>Manufacturer's Selling Points:</h2>
+            <ul>
+                <li>Dynamic Island</li>
+                <li>ProMotion Display</li>
+                <li>4x Camera Zoom Range</li>
+                <li>Emergency SOS via Satellite</li>
+            </ul>
+        </div>
+
+        <div class="productsection" id="section2">
+            <p class="custreview"><strong>Name: </strong>Unsatisfied Customer<br><strong>Rating: </strong>1/5<br><strong>Review: </strong>This the customer's review. They did not like the phone because it broke too easily.</p>
+            <p></p>
+            <p class="custreview"><strong>Name: </strong>John Doe<br><strong>Rating: </strong>3/5<br><strong>Review: </strong>This the customer's review. They liked the battery life but did not like the camera.</p>
+            <p></p>
+            <p class="custreview"><strong>Name: </strong>Unsatisfied Customer<br><strong>Rating: </strong>1/5<br><strong>Review: </strong>This the customer's review. They did not like the phone because it broke too easily.</p>
+            <p></p>
+            <p class="custreview"><strong>Name: </strong>John Doe<br><strong>Rating: </strong>3/5<br><strong>Review: </strong>This the customer's review. They liked the battery life but did not like the camera.</p>
+        </div>
+
+        <div class="productsection" id="section3">
+            <img src="Images/ip14extra1.jpg" alt="extra image of iphone 14" width="200" height="150">
+            <img src="Images/ip14extra2.jpg" alt="extra image of iphone 14" width="150" height="200">
+            <img src="Images/ip14extra3.webp" alt="extra image of iphone 14" width="200" height="200">
+        </div>
+    </div>
+
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbxp_meJ8t3T4mL0s6ANDFzPXX6T1FRI7loLwJZHTvCQHmdUqhLfFfxJinajs8AUjAcC/exec" id="reviewform">
+        <fieldset>
+            <legend>Leave a Review for this Device</legend>
+
+            <label for="cname">Name</label>
+            <input name="Name" type="text" id="cname" placeholder="Name">
+
+            <label for="review">Review</label>
+            <textarea name="Review" id="review" rows="5" cols="10">Your review...</textarea>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <footer>
+        <address>
+            <a href="mailto:contact@email.com">Site Contact: contact@email.com</a>
+        </address>
+    </footer>
+</body>
+
+<script>
+    let buttons = document.querySelectorAll("nav ul li")
+
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", function() {
+            button.style.border = "10px solid green";
+        });
+        button.addEventListener("mouseout", function() {
+            button.style.border = "10px solid #4472C4";
+        });
+    });
+</script>
+
+</html>

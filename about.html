@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="utf-8">
     <meta name="description" content="Information about devices">
     <meta name="keywords" content="electronics, devices, phones, tablets, computers, consumers, reviews, ratings">
@@ -13,63 +13,76 @@
 
 <body>
     <header>
-        <h1><a href="index.html"><img src="Images/logo.png" alt="logo" width="50" height="50"></a>The Informed Shopper</h1>
+        <h1><a id="pagehome" href="index.html">The Informed Shopper</a></h1>
         <nav>
             <ul>
-                <li>Mobile Devices</li>
-                <li>Desktops and Laptops</li>
-                <li>Appliances</li>
+                <li><a href="mobiledevices.html">Mobile Devices</a></li>
+                <li><a href="desktops.html">Desktops and Laptops</a></li>
+                <li><a href="appliances.html">Appliances</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div id="about">
         <h2><strong>About Us</strong></h2>
         <p>The Informed Shopper was created to help consumers make the best use of their money. With so many competing companies, and so many different devices on the market today, the decisions available can be overwhelming. Using reviews from fellow consumers, and information from experts, shoppers can determine what they'd like the most and make a purchase they won't regret.</p>
         <p></p>
         <p>We collect most of our information from customer reviews. Device specifications are collected directly from the device manufacturer's website. Informed Shoppers also features video reviews from prominent creators. All other resources will be credited at the bottom of each device page.</p>
     </div>
 
-    <div>
-        <form method="GET" action="">
+    <div id="contactform">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbwSyLmf1W0D5TmkC4lnD5AA7PeHPcBofdl7YtsCS5LBCowkCD-Tbd0iYa5oMKmExN7B/exec">
             <fieldset>
                 <legend><strong>Feedback Form</strong></legend>
 
                 <label for="name">Preferred Name</label>
-                <input type="text" id="name">
+                <input name="Name" type="text" id="name">
 
                 <p>How do you use The Informed Shopper?</p>
-                <input type="checkbox" name="usage" id="review" value="review">
+                <input name="Review Devices" type="checkbox" name="usage" id="review" value="review">
                 <label for="review">Review Devices</label>
-                <input type="checkbox" name="usage" id="research" value="research">
+                <input name="Research Devices" type="checkbox" name="usage" id="research" value="research">
                 <label for="research">Research Products</label><br><br>
                 
                 <label for="refer">How did you hear about us?</label>
-                <input type="text" id="refer"><br><br>
+                <input name="Referred" type="text" id="refer"><br><br>
 
                 <label for="feedback">Feedback</label>
-                <textarea rows="3" cols="10" id="feedback">Tell us what you think!</textarea><br><br>
+                <textarea name="Feedback" rows="3" cols="10" id="feedback">Tell us what you think!</textarea><br><br>
 
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
     </div>
 
-    <div>
+    <div id="contact">
         <h3>Contact Information for Support</h3>
         <address>
-            <a href="mailto:support@email.com">Email Us</a><br>
-            <a href="tel:123-456-7890">Call Us</a>
+            <a href="mailto:support@email.com">Email Us at support@email.com</a><br>
+            <a href="tel:123-456-7890">Call Us at (123) 456-7890</a>
         </address>
     </div>
 
     <footer>
         <address>
-            <a href="mailto:contact@email.com">Site Contact</a>
+            <a href="mailto:contact@email.com">Site Contact: contact@email.com</a>
         </address>
     </footer>
 
 </body>
+
+<script>
+    let buttons = document.querySelectorAll("nav ul li")
+
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", function() {
+            button.style.border = "10px solid green";
+        });
+        button.addEventListener("mouseout", function() {
+            button.style.border = "10px solid #4472C4";
+        });
+    });
+</script>
 
 </html>

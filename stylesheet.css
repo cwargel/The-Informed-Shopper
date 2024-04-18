@@ -1,0 +1,150 @@
+header {  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    color: black; /* Changes text color */
+    display: flex; /* Creates a flexbox for header items */
+    justify-content: space-between; /* Sets space between items in the header */
+    background-color: white; /* Changes background color */
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#about {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+#contactform {
+    padding-bottom: 20px;
+}
+
+#homepageimages {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#pagehome {
+    text-decoration: none;
+}
+
+address a {
+    color: white; /* Sets contact info to white */
+    text-decoration: none; /* Removes underlines for contact info */
+}
+
+a {
+    color: black; /* Sets nav color to black */
+    text-decoration: none; /* Removes underlines for nav */
+}
+
+nav {
+    display: flex; /* Creates a flexbox for nav items */
+    justify-content: right; /* Sets the content to display at the right of the page */
+}
+
+nav ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    display: inline-block; /* Creates boxes for the nav items */
+    border-radius: 20px; /* Sets a curved border for the nav items */
+    padding: 10px; /* Creates enough space for the text in the boxes */
+    border: 10px solid #4472C4; /* Sets the properties for the borders of the boxes */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changes font */
+    background-color: #4472C4; /* Changes background color */
+    color: white; /* Changes text color */
+}
+
+#newsletterform {
+    padding: 20px;
+}
+
+div .homepageimages {
+    display: flex; /* Creates a flexbox for items */
+    width: 100%; /* Makes the images span the entire width of the page */
+    justify-content: space-between; /* Creates even spacing between images */
+    /* More images will be needed to make this look natural on desktop displays */
+}
+
+.devicesection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section {
+    color: black; /* Changes text color */
+    background-color: white; /* Changes background color */
+}
+
+#devsections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1x3 grid layout */
+    grid-gap: 20px;
+}
+
+.productsection {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px; /* Optional: Add margin to create space between sections */
+}
+
+
+#contact {
+    padding-bottom: 50px;
+}
+
+#devicename {
+    display: flex;
+    justify-content: center;
+}
+
+#devimages {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+#reviewform {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custreview {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    padding-left: 30px;
+}
+
+.sectionimage {
+    border-radius: 20px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+.productimage {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;  
+}
+
+.sectionname {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
